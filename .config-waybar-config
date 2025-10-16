@@ -1,0 +1,67 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "spacing": 3,
+    "height": 0,
+    "margin-top": -10,
+    "margin-right": 14,
+    "margin-bottom": 3,
+    "margin-left": 14,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "tray",
+        "battery",
+        "pulseaudio",
+        "keyboard-state",
+        "hyprland/language"
+    ],
+    "tray": {
+        "spacing": 10,
+        "tooltip": false
+    },
+    "clock": {
+        "timezone": "Europe/Moscow",
+        "locale": "ru_RU.UTF-8",
+        "format": "{:L%A, %Y-%m-%d, %H:%M}",
+        "tooltip-format": "<big>{:L%A, %d %B %Y}</big>"
+    },
+    "battery": {
+        "format": "Батарея - {capacity}%",
+        "interval": 5,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "tooltip": false
+    },
+    "pulseaudio": {
+        "scroll-step": 5,
+        "max-volume": 150,
+        "format": "Громкость - {volume}%",
+        "format-bluetooth": "Громкость - {volume}%",
+        "format-muted": "Громкость ----",
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+    "keyboard-state": {
+        "capslock": true,
+        "numlock": false,
+        "scrolllock": false,
+        "format": "{icon}",
+        "format-icons": {
+            "locked": "Caps +",
+            "unlocked": "Caps -"
+        }
+    },
+    "hyprland/language": {
+        "format": "{}",
+        "format-en": "EN",
+        "format-ru": "RU"
+    }
+}
