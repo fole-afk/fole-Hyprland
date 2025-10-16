@@ -1,0 +1,47 @@
+* {
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+    font-family: "spleen";
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0;
+}
+
+window#waybar {
+    background: none;
+    border: none
+}
+
+#language, #keyboard-state, #clock, #pulseaudio, #tray, #battery {
+    margin: 8px 6px 8px 0px;
+    background-color: #dfdfdf;
+    padding: 2px 8px;
+    color: #000000;
+    border: 7px solid #000000
+}
+
+#workspaces {
+    margin: 8px 0px 8px 6px;
+}
+
+#workspaces button {
+    all: initial;
+    background-color: #b7b7b7;
+    padding: 0px 6px;
+    color: #414141;
+    border: 7px solid #414141
+}
+
+#workspaces button.active {
+    color: #000000;
+    background-color: #dfdfdf;
+    border: 7px solid #000000
+}
+
+#workspaces button.urgent,
+#battery.warning, #battery.critical, #battery.urgent {
+    background-color: #af0000;
+    border: 7px solid #440000;
+    color: #440000;
+}
